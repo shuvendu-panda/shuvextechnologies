@@ -1,0 +1,7 @@
+# robots.txt for Shuvex Technologies
+# https://shuvextechnologies.netlify.app
+
+User-agent: *
+Allow: /
+
+Sitemap: https://shuvextechnologies.netlify.app/sitemap.xml
