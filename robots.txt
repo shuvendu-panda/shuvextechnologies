@@ -4,4 +4,7 @@
 User-agent: *
 Allow: /
 
+# Block JS files from being crawled (not useful for indexing)
+Disallow: /index.js
+
 Sitemap: https://shuvextechnologies.netlify.app/sitemap.xml
