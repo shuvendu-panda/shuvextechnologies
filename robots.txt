@@ -1,0 +1,10 @@
+# robots.txt for Shuvex Technologies
+# https://ShuvexTechnologies.netlify.app
+
+User-agent: *
+Allow: /
+
+# Block JS files from being crawled (not useful for indexing)
+Disallow: /index.js
+
+Sitemap: https://ShuvexTechnologies.netlify.app/sitemap.xml

@@ -1,0 +1,152 @@
+/* =========================
+   COMMON FOOTER
+========================= */
+
+footer{
+    background: var(--dark-1);
+    border-top: 1px solid var(--border);
+    padding: 72px 0 36px;
+    /* margin-top: 60px; */
+    /* position: absolute; */
+}
+
+/* SAME WIDTH AS NAVBAR */
+.footer-grid{
+    max-width: 1320px;
+    width: 100%;
+
+    margin: 0 auto 52px;
+
+    padding-left: 60px;
+    padding-right: 60px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 48px;
+
+    box-sizing: border-box;
+}
+
+.footer-bottom{
+    max-width: 1320px;
+    width: 100%;
+
+    margin: 0 auto;
+
+    padding: 30px 60px 0;
+
+    border-top: 1px solid var(--border);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    box-sizing: border-box;
+}
+
+/* MOBILE */
+@media (max-width:960px){
+
+    .footer-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 36px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .footer-grid{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-bottom{
+        padding-left: 20px;
+        padding-right: 20px;
+
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:560px){
+
+    .footer-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links{
+        justify-content: center;
+    }
+
+}
+/* lastupdate color */
+.footer-links a{
+    color: var(--text-3);
+    text-decoration: none;
+    transition: var(--t);
+}
+
+.footer-links a:hover{
+    color: var(--blue-bright);
+}
+
+.footer-links a:visited{
+    color: var(--text-3);
+}
+@media (max-width:560px){
+
+    .footer-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-links{
+        justify-content: center;
+    }
+
+}
+
+/* ===================================
+   FOOTER LINKS
+=================================== */
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.footer-links a{
+    color: var(--text-3);
+    text-decoration: none;
+    transition: var(--t);
+    position: relative;
+}
+
+.footer-links a:visited{
+    color: var(--text-3);
+}
+
+.footer-links a:hover{
+    color: var(--blue-bright);
+    transform: translateY(-2px);
+}
+
+body .footer-links a{
+    font-size: 0.84rem !important;
+}
+/* Footer Logo */
+
+/* Footer Logo - Same as Navbar */
+
+.footer-brand img{
+    width:149px;
+    max-width:100%;
+    height:auto;
+    display:block;
+    /* transform: scale(1.7); */
+    position: relative;
+}
